@@ -24,7 +24,7 @@
     <title>Arc - Seamless File Sharing by Quadren</title>
     <link rel="manifest" href="manifest.json" />
   </head>
-  <!-- <style>
+  <style>
     .loading {
       display: flex;
       justify-content: center;
@@ -68,16 +68,20 @@
         transform: rotate(360deg);
       }
     }
-  </style> -->
+  </style>
   <body>
-    <!-- <div class="loading">
+    <div class="loading">
       <div class="loader"></div>
-    </div> -->
+    </div>
     <script>
-      var serviceWorkerVersion = '911701007';
+      var serviceWorkerVersion = '2134104818';
       var scriptLoaded = false;
       function loadMainDartJs() {
         if (scriptLoaded) {
+          var loadingIndicator = document.getElementById("loading");
+          if (loadingIndicator) {
+            loadingIndicator.remove();
+          }
           return;
         }
         scriptLoaded = true;
