@@ -31164,7 +31164,7 @@ n=s.ab.z
 if(n==null)l=m
 else l=n.hT(l)
 return new A.hq(A.bZ(m,A.dJ(A.j9(A.b([p,o,A.cW(b,1,B.y,l,m,m)],t.p),B.E,B.U,B.ao),m,m),m,m,new A.cP(m,m,r,q,m,m,B.Z),58,m,B.ku,B.kt,m),c,m)},
-Sk(a){var s,r,q,p=this,o=null,n="Windows (.msi)",m="MacOS (.dmg)",l="Play Store",k="App Store",j=p.c
+Sk(a){var s,r,q,p=this,o=null,n="Windows (.exe)",m="MacOS (.dmg)",l="Play Store",k="App Store",j=p.c
 j.toString
 s=A.aW(j)
 r=p.VP()
