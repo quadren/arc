@@ -31052,7 +31052,7 @@ r=s.Q
 if(r==null)r=h
 else{q=g.ch.fx.a
 q=r.hL(A.aG(84,q>>>16&255,q>>>8&255,q&255))
-r=q}r=A.e0("*Linux support coming soon. Active support will only be provided for Debian or Ubuntu-based distributions.\n**local network on TP-Link Deco M9, from MacBook Pro M1 (macOS Monterey) to OnePlus 7T (Android 12). 142MB .mkv video file transferred, time for 100MB calculated.",2,B.G,r,B.T)
+r=q}r=A.e0("*Linux support coming soon. Active support will only be provided for Debian or Ubuntu-based distributions.",2,B.G,r,B.T)
 q=s.a
 p=q==null
 o=p?h:q.iC(d)
