@@ -31104,7 +31104,7 @@ o=A.eg("By downloading Arc, you acknowledge that you have read and agreed to ",1
 return A.hH(A.a([r,q,m,l,A.RF(new A.DT(B.au,B.HQ,A.a([o,new A.hC(A.l7(n,n,B.dy,!0,n,A.dp(n,p==null?n:p.Ry(B.u0,this.c.cx),"the EULA."),B.aT,n,n,1,B.ad),new A.a1y(),n)],k),n),0.33)],k),B.O,B.f0)},
 $S:126}
 A.a1y.prototype={
-$0(){return A.cI("https://bit.ly/arc_eula")},
+$0(){return A.cI("https://bit.ly/arc_eula_updated")},
 $S:0}
 A.a1L.prototype={
 $0(){var s,r=null,q=this.b.cx,p=q.a
