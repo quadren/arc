@@ -31084,7 +31084,7 @@ lc(a,b,c){var s=null
 return new A.hE(A.cr(s,A.e1(A.mB(c,a.cx,22),s,s),s,s,s,s,s,new A.aX(14,0,14,0),s,s),new A.a_6(b),s)}}
 A.a_7.prototype={
 $2(a,b){var s=null,r=b.c,q=this.b,p=this.a,o=t.p
-return A.cr(s,A.hK(A.a([A.ej("Copyright Quadren 2022-23. All rights reserved.",1,B.F,this.c.RG.y,s),A.bJ(s,22,s),A.l6(A.a([p.lc(q,"https://instagram.com/quadrendev",B.xA),p.lc(q,"https://twitter.com/quadrendev",B.xC),p.lc(q,"https://github.com/quadren",B.xy),p.lc(q,"https://discord.gg/BZTc4T4eev",B.xB),p.lc(q,"mailto:quadrendev@gmail.com",B.xD)],o),B.N,B.a4,B.aG)],o),B.N,B.a4),q.CW,s,s,r.b*0.2,s,s,s,r.a)},
+return A.cr(s,A.hK(A.a([A.ej("Copyright Quadren 2022-23. All rights reserved.",1,B.F,this.c.RG.y,s),A.bJ(s,22,s),A.l6(A.a([p.lc(q,"https://instagram.com/quadrentech",B.xA),p.lc(q,"https://twitter.com/quadrentech",B.xC),p.lc(q,"https://github.com/quadren",B.xy),p.lc(q,"https://discord.gg/BZTc4T4eev",B.xB),p.lc(q,"mailto:crew@quadren.tech",B.xD)],o),B.N,B.a4,B.aG)],o),B.N,B.a4),q.CW,s,s,r.b*0.2,s,s,s,r.a)},
 $S:15}
 A.a_6.prototype={
 $0(){return A.cM(this.a)},
