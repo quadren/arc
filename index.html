@@ -3,16 +3,22 @@
   <head>
     <!-- Use "/" for development. Use URL for production. -->
     <!-- <base href="/"> -->
-    <base href="https://quadren.github.io/arc/">
+    <base href="https://quadren.github.io/arc/" />
 
     <meta charset="UTF-8" />
     <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
     <meta
       name="description"
-      content="Arc is a seamless cross-platform file transfer service by Quadren. Fast, secure and 100% free, with support for Windows, MacOS, Android and iOS."
+      content="Arc is a seamless cross-platform file transfer service by Aneesh Hegde. Fast, secure and free, with support for Windows, MacOS, Android and iOS."
     />
-    <meta name="google-site-verification" content="uyJ0We8OMvBqm2PsoJ0cLi0ibKqxQC65bSiR0eEqFOA" />
+    <meta
+      name="google-site-verification"
+      content="uyJ0We8OMvBqm2PsoJ0cLi0ibKqxQC65bSiR0eEqFOA"
+    />
 
     <!-- iOS meta tags & icons -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -26,122 +32,10 @@
     <title>Arc - Seamless File Sharing by Quadren</title>
     <link rel="manifest" href="manifest.json" />
   </head>
-  <style>
-    .loading {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-    }
-
-    .loader {
-      border: 16px solid #fafafa;
-      border-radius: 50%;
-      border: 15px solid;
-      border-top: 16px solid #3ecd7a;
-      border-right: 16px solid #fafafa;
-      border-bottom: 16px solid #3ecd7a;
-      border-left: 16px solid #fafafa;
-      width: 120px;
-      height: 120px;
-      -webkit-animation: spin 2s linear infinite;
-      animation: spin 2s linear infinite;
-    }
-
-    @-webkit-keyframes spin {
-      0% {
-        -webkit-transform: rotate(0deg);
-      }
-      100% {
-        -webkit-transform: rotate(360deg);
-      }
-    }
-
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-  </style>
   <body>
-    <div class="loading">
-      <div class="loader"></div>
-    </div>
     <script>
-      var serviceWorkerVersion = '1388578202';
-      var scriptLoaded = false;
-      function loadMainDartJs() {
-        if (scriptLoaded) {
-          var loadingIndicator = document.getElementById("loading");
-          if (loadingIndicator) {
-            loadingIndicator.remove();
-          }
-          return;
-        }
-        scriptLoaded = true;
-        var scriptTag = document.createElement("script");
-        scriptTag.src = "main.dart.js";
-        scriptTag.type = "application/javascript";
-        document.body.append(scriptTag);
-      }
-
-      if ("serviceWorker" in navigator) {
-        // Service workers are supported. Use them.
-        window.addEventListener("load", function () {
-          // Wait for registration to finish before dropping the <script> tag.
-          // Otherwise, the browser will load the script multiple times,
-          // potentially different versions.
-          var serviceWorkerUrl =
-            "flutter_service_worker.js?v=" + serviceWorkerVersion;
-          navigator.serviceWorker.register(serviceWorkerUrl).then((reg) => {
-            function waitForActivation(serviceWorker) {
-              serviceWorker.addEventListener("statechange", () => {
-                if (serviceWorker.state == "activated") {
-                  console.log("Installed new service worker.");
-                  loadMainDartJs();
-                }
-              });
-            }
-            if (!reg.active && (reg.installing || reg.waiting)) {
-              // No active web worker and we have installed or are installing
-              // one for the first time. Simply wait for it to activate.
-              waitForActivation(reg.installing || reg.waiting);
-            } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
-              // When the app updates the serviceWorkerVersion changes, so we
-              // need to ask the service worker to update.
-              console.log("New service worker available.");
-              reg.update();
-              waitForActivation(reg.installing);
-            } else {
-              // Existing service worker is still good.
-              console.log("Loading app from service worker.");
-              loadMainDartJs();
-            }
-          });
-
-          // If service worker doesn't succeed in a reasonable amount of time,
-          // fallback to plaint <script> tag.
-          setTimeout(() => {
-            if (!scriptLoaded) {
-              console.warn(
-                "Failed to load app from service worker. Falling back to plain <script> tag."
-              );
-              loadMainDartJs();
-            }
-          }, 4000);
-        });
-      } else {
-        // Service workers not supported. Just drop the <script> tag.
-        loadMainDartJs();
-      }
+      // Immediately redirect to https://arctransfer.co, the new home of Arc.
+      window.location.replace("https://arctransfer.co");
     </script>
   </body>
 </html>
